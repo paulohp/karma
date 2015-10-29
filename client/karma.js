@@ -55,14 +55,7 @@ var Karma = function (socket, iframe, opener, navigator, location) {
     // This causes memory leak in Chrome (17.0.963.66)
     contextWindow.onerror = function () {
       return contextWindow.__karma__.error.apply(contextWindow.__karma__, arguments)
-    }
-
-    contextWindow.onbeforeunload = function (e, b) {
-      if (!reloadingContext) {
-        // TODO(vojta): show what test (with explanation about jasmine.UPDATE_INTERVAL)
-        contextWindow.__karma__.error('Some of your tests did a full page reload!')
-      }
-    }
+    } 
 
     if (self.config.captureConsole) {
       // patch the console
