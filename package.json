@@ -1,5 +1,5 @@
 {
-  "name": "karma",
+  "name": "karma-tidy",
   "description": "Spectacular Test Runner for JavaScript.",
   "homepage": "http://karma-runner.github.io/",
   "repository": {
@@ -325,6 +325,6 @@
   "engines": {
     "node": "0.10 || 0.12 || 4"
   },
-  "version": "0.13.14",
+  "version": "1.0.0",
   "license": "MIT"
 }
